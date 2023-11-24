@@ -4,11 +4,11 @@ import Link from "next/link";
 import GithubSignInButton from "@/app/ui/githubSignInButton/GithubSignInButton";
 import GoogleSignInButton from "@/app/ui/googleSignInButton/GoogleSignInButton";
 
-export default async function Login() {
+export default async function SignUp() {
   return (
     <div className="mt-24  rounded bg-black/80 py-10 px-6 md:mt-0 md:max-w-sm md:px-14">
       <form >
-        <h1 className="text-3xl font-semibold text-white">Log in</h1>
+        <h1 className="text-3xl font-semibold text-white">Sign Up</h1>
         <div className="space-y-4 mt-5">
           <Input
             type="email"
@@ -21,15 +21,15 @@ export default async function Login() {
             variant="destructive"
             className="w-full bg-[#e50914]"
           >
-            Log in
+            Sign Up
           </Button>
         </div>
       </form>
 
       <div className="text-gray-500 text-sm mt-2">
-        New to Neflix?{" "}
-        <Link className="text-white hover:underline" href="/sign-up">
-          Sign up now
+        Alredy Have a account?{" "}
+        <Link className="text-white hover:underline" href="/login">
+          Log in now!
         </Link>
       </div>
 
